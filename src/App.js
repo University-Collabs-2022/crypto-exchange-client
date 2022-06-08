@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box'
-import LoginPage from './pages/LoginPage'
-import Navbar from './components/Navbar'
+import LoginPage from './pages/Login/LoginPage'
+import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import Register from 'pages/Register'
+import Register from 'pages/Register/Register'
 
 export default function App() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1}} style={{ height: '100%', width: '100%'}}>
         <Navbar />
         <Routes>
           <Route path='/login' element={<LoginPage />} />
